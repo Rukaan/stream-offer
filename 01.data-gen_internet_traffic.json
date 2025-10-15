@@ -1,0 +1,107 @@
+{
+    "type": "record",
+    "name": "traffic",
+    "namespace": "mock.demo",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "arg.properties": {
+                    "range": {
+                        "min": 1700000000000,
+                        "max": 1900000000000
+                    }
+                }
+            }
+        },
+        {
+            "name": "downlink_bytes",
+            "type": {
+                "type": "long",
+                "arg.properties": {
+                    "range": {
+                        "min": 1000,
+                        "max": 50000000
+                    }
+                }
+            }
+        },
+        {
+            "name": "uplink_bytes",
+            "type": {
+                "type": "long",
+                "arg.properties": {
+                    "range": {
+                        "min": 500,
+                        "max": 25000000
+                    }
+                }
+            }
+        },
+        {
+            "name": "msisdn",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "6285712345610",
+                        "6285712345611",
+                        "6285712345612",
+                        "6285712345613",
+                        "6285712345614",
+                        "6285712345615",
+                        "6285712345616",
+                        "6285712345617",
+                        "6285712345618",
+                        "6285712345619"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "domain",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "graph.facebook.com",
+                        "youtube.com",
+                        "tiktokcdn.com",
+                        "whatsapp.net",
+                        "instagram.com",
+                        "twitter.com",
+                        "spotify.com",
+                        "netflix.com",
+                        "shopee.co.id",
+                        "tokopedia.com",
+                        "ff.garena.com",
+                        "pubg.com",
+                        "freedata.ff.garena.vn",
+                        "regalia.ff.garena.com"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ip",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "10.0.0.1",
+                        "10.0.1.2",
+                        "10.1.1.3",
+                        "172.16.0.4",
+                        "172.16.1.5",
+                        "192.168.0.6",
+                        "192.168.1.7",
+                        "192.168.2.8",
+                        "203.0.113.9",
+                        "198.51.100.10"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "domain": {
+      "connect.index": 4,
+      "type": "string"
+    },
+    "downlink_bytes": {
+      "connect.index": 1,
+      "connect.type": "int64",
+      "type": "integer"
+    },
+    "ip": {
+      "connect.index": 5,
+      "type": "string"
+    },
+    "msisdn": {
+      "connect.index": 3,
+      "type": "string"
+    },
+    "timestamp": {
+      "connect.index": 0,
+      "connect.type": "int64",
+      "type": "integer"
+    },
+    "uplink_bytes": {
+      "connect.index": 2,
+      "connect.type": "int64",
+      "type": "integer"
+    }
+  },
+  "title": "mock.demo.traffic",
+  "type": "object"
+}
